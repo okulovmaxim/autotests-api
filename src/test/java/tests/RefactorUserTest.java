@@ -127,7 +127,7 @@ public class RefactorUserTest extends BaseApiTest{
        List <String> users = userService.getUsers().should(hasStatusCode(200))
                .asList(String.class);
 
-       Assert.assertTrue(users.size() >= 3);
+       Assert.assertTrue(users.size() >= 5);
     }
 
 }
