@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "8.10"
+    id "io.qameta.allure" version "2.12.0"
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.18.0'
+    testImplementation 'org.aeonbits.owner:owner:1.0.4'
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
+    testImplementation 'org.testng:testng:7.7.0'
+}
+
+tasks.register("testNGRun", Test.class){
+    useTestNG()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
