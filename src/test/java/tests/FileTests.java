@@ -1,12 +1,9 @@
 package tests;
 
-import assertions.Conditions;
 import io.qameta.allure.Attachment;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.io.File;
-
 import static assertions.Conditions.*;
 
 public class FileTests extends BaseApiTest {
