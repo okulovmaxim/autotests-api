@@ -20,6 +20,7 @@ public class FileTests extends BaseApiTest {
     public void positiveDownloadFileTest() {
         byte [] file = fileService.downloadBaseImage()
                 .asResponse().asByteArray();
+
         attachFile(file);
         File expectedFile = new File("src/test/resources/threadqa.jpeg");
 
@@ -35,6 +36,7 @@ public class FileTests extends BaseApiTest {
                 .should(hasStatus("success"));
 
         byte [] actualFile = fileService.downloadLastFile().asResponse().asByteArray();
+
         Assert.assertTrue(actualFile.length != 0);
         Assert.assertEquals(expectedFile.length(), actualFile.length);
     }
