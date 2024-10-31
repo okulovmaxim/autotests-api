@@ -21,7 +21,6 @@ public class RefactorUserTest extends BaseApiTest{
     @Test
     public void negativeRegisterUserTest() {
         randomUser.setPass(null);
-
         userService.register(randomUser)
                 .should(hasStatusCode(400))
                 .should(hasStatus("fail"))
@@ -40,7 +39,6 @@ public class RefactorUserTest extends BaseApiTest{
     @Test
     public void positiveAuthUserTest() {
         userService.register(randomUser);
-
         String token = userService.auth(randomUser)
                 .should(hasStatusCode(200))
                 .asJwt();

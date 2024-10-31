@@ -266,7 +266,7 @@ public class UserTests {
 
     @Test
     public void deleteDefaultUserTest() {
-        Map<String,String> adminUser = new HashMap<String,String>() {{
+        Map<String, String> adminUser = new HashMap<String, String>() {{
             put("username", "admin");
             put("password", "admin");
         }};
