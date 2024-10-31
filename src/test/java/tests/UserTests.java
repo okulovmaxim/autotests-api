@@ -1,7 +1,5 @@
 package tests;
 
-import assertions.Conditions;
-import com.beust.ah.A;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;

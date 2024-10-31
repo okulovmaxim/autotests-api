@@ -3,9 +3,7 @@ package tests;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.List;
-
 import static assertions.Conditions.*;
 
 public class RefactorUserTest extends BaseApiTest{
