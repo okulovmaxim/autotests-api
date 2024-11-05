@@ -10,6 +10,7 @@ import java.nio.file.Files;
 import static io.restassured.RestAssured.given;
 
 public class FileService {
+
     public AssertableResponse downloadBaseImage() {
         return new AssertableResponse(given()
                 .get("/files/download")

@@ -1,9 +1,7 @@
 package services;
 
 import assertions.AssertableResponse;
-import com.beust.ah.A;
 import io.restassured.http.ContentType;
-import io.restassured.response.ValidatableResponse;
 import models.user.AuthData;
 import models.user.UserData;
 
@@ -13,6 +11,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class UserService {
+
     public AssertableResponse register(UserData user) {
         return new AssertableResponse(given()
                 .contentType(ContentType.JSON)
