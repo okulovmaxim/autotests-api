@@ -15,4 +15,5 @@ public class GameTest extends BaseApiTest {
                 .should(hasMessage("Game created"))
                 .should(hasStatus("success"));
     }
+
 }

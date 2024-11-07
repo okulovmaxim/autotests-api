@@ -4,10 +4,12 @@ import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
+
 import models.responses.ErrorInfo;
 import models.responses.Info;
 import models.user.AuthData;
 import models.user.UserData;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;

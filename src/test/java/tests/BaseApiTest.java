@@ -11,8 +11,7 @@ import services.FileService;
 import services.GameService;
 import services.UserService;
 
-import static addons.RandomTestData.getRandomGame;
-import static addons.RandomTestData.getRandomUser;
+import static addons.RandomTestData.*;
 
 public class BaseApiTest {
     protected static UserService userService;

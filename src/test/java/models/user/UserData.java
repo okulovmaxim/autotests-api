@@ -5,6 +5,7 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import models.games.GameData;
 
 @Data
 @AllArgsConstructor
@@ -17,7 +18,7 @@ public class UserData{
 	private String pass;
 
 	@JsonProperty("games")
-	private List<GamesItem> games;
+	private List<GameData> games;
 
 	@JsonProperty("login")
 	private String login;
@@ -26,7 +27,7 @@ public class UserData{
 		return pass;
 	}
 
-	public List<GamesItem> getGames(){
+	public List<GameData> getGames(){
 		return games;
 	}
 
