@@ -7,10 +7,12 @@ import org.testng.Assert;
 
 @RequiredArgsConstructor
 public class StatusCodeCondition implements Condition {
+
     private final Integer statusCode;
     @Override
     public void check(ValidatableResponse response) {
         int actualStatusCode = response.extract().statusCode();
+
         Assert.assertEquals(statusCode, actualStatusCode);
     }
 

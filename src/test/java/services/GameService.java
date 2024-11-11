@@ -18,4 +18,10 @@ public class GameService {
                 .post("user/games")
                 .then());
     }
+
+    public AssertableResponse getGame(String token) {
+        return new AssertableResponse(given().auth().oauth2(token)
+                .get("user/games")
+                .then());
+    }
 }
