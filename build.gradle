@@ -25,4 +25,5 @@ tasks.register("testNGRun", Test.class){
     testLogging {
         events "passed", "skipped", "failed"
     }
+    environment "host", System.getProperty("host")
 }
