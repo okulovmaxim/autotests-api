@@ -1,7 +1,6 @@
-package models.games;
+package models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.github.javafaker.Bool;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

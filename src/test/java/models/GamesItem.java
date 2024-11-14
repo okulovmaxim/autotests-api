@@ -1,35 +1,29 @@
-package models.games;
+package models;
 
 import java.util.List;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.github.javafaker.Bool;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
 @Data
-@Builder
-@NoArgsConstructor
 @AllArgsConstructor
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class GameData {
+@NoArgsConstructor
+@Builder
+public class GamesItem{
 
 	@JsonProperty("gameId")
-	private Integer gameId;
+	private int gameId;
 
 	@JsonProperty("requirements")
 	private Requirements requirements;
 
 	@JsonProperty("requiredAge")
-	private Boolean requiredAge;
+	private boolean requiredAge;
 
 	@JsonProperty("rating")
-	private Integer rating;
+	private int rating;
 
 	@JsonProperty("description")
 	private String description;
@@ -41,10 +35,10 @@ public class GameData {
 	private List<String> tags;
 
 	@JsonProperty("isFree")
-	private Boolean isFree;
+	private boolean isFree;
 
 	@JsonProperty("price")
-	private Integer price;
+	private int price;
 
 	@JsonProperty("dlcs")
 	private List<DlcsItem> dlcs;
@@ -58,7 +52,7 @@ public class GameData {
 	@JsonProperty("publish_date")
 	private String publishDate;
 
-	public Integer getGameId(){
+	public int getGameId(){
 		return gameId;
 	}
 
@@ -66,11 +60,11 @@ public class GameData {
 		return requirements;
 	}
 
-	public Boolean isRequiredAge(){
+	public boolean isRequiredAge(){
 		return requiredAge;
 	}
 
-	public Integer getRating(){
+	public int getRating(){
 		return rating;
 	}
 
@@ -86,11 +80,11 @@ public class GameData {
 		return tags;
 	}
 
-	public Boolean isIsFree(){
+	public boolean isIsFree(){
 		return isFree;
 	}
 
-	public Integer getPrice(){
+	public int getPrice(){
 		return price;
 	}
 

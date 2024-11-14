@@ -2,12 +2,10 @@ package services;
 
 import assertions.AssertableResponse;
 import io.restassured.http.ContentType;
-import models.user.AuthData;
-import models.user.UserData;
-
+import models.AuthData;
+import models.UserData;
 import java.util.HashMap;
 import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 
 public class UserService {

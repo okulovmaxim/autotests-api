@@ -2,11 +2,8 @@ package services;
 
 import assertions.AssertableResponse;
 import io.restassured.http.ContentType;
-import models.games.GameData;
-import tests.GameTest;
-
-import java.util.Locale;
-
+import models.DlcsItem;
+import models.GameData;
 import static io.restassured.RestAssured.given;
 
 public class GameService {
@@ -24,4 +21,12 @@ public class GameService {
                 .get("user/games")
                 .then());
     }
+
+    /*public AssertableResponse updateGameDlcInfo(String token, DlcsItem dlcsItem) {
+        return new AssertableResponse(given().auth().oauth2(token)
+                .contentType(ContentType.JSON)
+                .body()
+                .put("user/games/{gamesId}")
+                .then());
+    }*/
 }
