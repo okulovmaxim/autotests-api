@@ -4,10 +4,9 @@ import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
-
-import models.responses.ErrorInfo;
-import models.responses.Info;
 import models.AuthData;
+import models.ErrorInfo;
+import models.Info;
 import models.UserData;
 
 import org.testng.Assert;

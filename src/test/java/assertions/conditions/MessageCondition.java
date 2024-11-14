@@ -3,7 +3,7 @@ package assertions.conditions;
 import assertions.Condition;
 import io.restassured.response.ValidatableResponse;
 import lombok.RequiredArgsConstructor;
-import models.responses.Info;
+import models.Info;
 import org.assertj.core.api.SoftAssertions;
 import org.testng.Assert;
 
