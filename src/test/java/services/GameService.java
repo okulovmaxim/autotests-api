@@ -22,11 +22,12 @@ public class GameService {
                 .then());
     }
 
-    /*public AssertableResponse updateGameDlcInfo(String token, DlcsItem dlcsItem) {
+    public AssertableResponse updateGameDlcInfo(String token, DlcsItem dlcsItem, int gamesId) {
         return new AssertableResponse(given().auth().oauth2(token)
                 .contentType(ContentType.JSON)
-                .body()
+                .body(dlcsItem)
+                .pathParam("gamesId", gamesId)
                 .put("user/games/{gamesId}")
                 .then());
-    }*/
+    }
 }
