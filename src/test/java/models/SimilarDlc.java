@@ -1,4 +1,4 @@
-package models.games;
+package models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -13,12 +13,12 @@ import lombok.NoArgsConstructor;
 public class SimilarDlc{
 
 	@JsonProperty("isFree")
-	private Boolean isFree;
+	private boolean isFree;
 
 	@JsonProperty("dlcNameFromAnotherGame")
 	private String dlcNameFromAnotherGame;
 
-	public Boolean isIsFree(){
+	public boolean isIsFree(){
 		return isFree;
 	}
 

@@ -1,11 +1,10 @@
-package models.user;
+package models;
 
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
-import models.games.GameData;
 
 @Data
 @AllArgsConstructor

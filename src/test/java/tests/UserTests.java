@@ -7,8 +7,8 @@ import io.restassured.http.ContentType;
 
 import models.responses.ErrorInfo;
 import models.responses.Info;
-import models.user.AuthData;
-import models.user.UserData;
+import models.AuthData;
+import models.UserData;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;

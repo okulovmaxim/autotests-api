@@ -2,8 +2,8 @@ package services;
 
 import assertions.AssertableResponse;
 import io.restassured.http.ContentType;
-import models.games.DlcsItem;
-import models.games.GameData;
+import models.DlcsItem;
+import models.GameData;
 import static io.restassured.RestAssured.given;
 
 public class GameService {
