@@ -1,11 +1,11 @@
 package addons;
 
 import com.github.javafaker.Faker;
-import models.games.DlcsItem;
-import models.games.GameData;
-import models.games.Requirements;
-import models.games.SimilarDlc;
-import models.user.UserData;
+import models.DlcsItem;
+import models.GameData;
+import models.Requirements;
+import models.SimilarDlc;
+import models.UserData;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;

@@ -28,12 +28,4 @@ public class GameTest extends BaseApiTest {
 
         Assert.assertNotNull(response);
     }
-
-    @Test
-    public void positiveUpdateDlcs() {
-        userService.register(randomUser);
-        String token = userService.auth(randomUser).asJwt();
-
-    }
-
 }
