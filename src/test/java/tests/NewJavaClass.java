@@ -8,5 +8,6 @@ public class NewJavaClass {
     @Test
     public void simpleTest() {
         Assert.assertTrue(1==1);
+        Assert.assertTrue(2==2);
     }
 }
