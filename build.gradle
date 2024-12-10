@@ -20,7 +20,7 @@ dependencies {
     testImplementation 'org.assertj:assertj-core:3.26.3'
 }
 
-tasks.named("testNGRun", Test.class){
+tasks.named("test", Test.class){
     useTestNG()
     testLogging {
         events "passed", "skipped", "failed"
